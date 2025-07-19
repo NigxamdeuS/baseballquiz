@@ -14,7 +14,7 @@ public class QuestionDAO {
     // 全問題を取得（例）
     public List<Question> findAll() {
         List<Question> list = new ArrayList<>();
-        String sql = "SELECT * FROM questions ORDER BY RAND() LIMIT 10"; // ランダム10問
+        String sql = "SELECT * FROM questions ORDER BY RANDOM() LIMIT 10"; // ランダム10問
 
         try (Connection conn = DBUtil.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql);

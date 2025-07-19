@@ -6,9 +6,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBUtil {
-    private static final String URL = "jdbc:postgresql://localhost:5432/baseball_quiz_db";
-    private static final String USER = "postgres"; // 自分のDBユーザー名
-    private static final String PASSWORD = "password"; // 自分のパスワード
+    private static final String URL = "jdbc:postgresql://ep-empty-dust-a1h0gkvx-pooler.ap-southeast-1.aws.neon.tech/baseball_quiz_db?sslmode=require&channelBinding=require";
+    private static final String USER = "baseballquiz_owner";
+    private static final String PASSWORD = "npg_UjpnmZEq10KX";
 
     static {
         try {
